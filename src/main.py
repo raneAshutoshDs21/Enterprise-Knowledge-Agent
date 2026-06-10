@@ -7,21 +7,26 @@ def main():
     try:
         client = get_project_client()
 
-        print("✅ Connected successfully!")
-        print(f"Client Type: {type(client).__name__}")
+        print("Connected successfully!")
 
-        print("\nChecking project access...")
+        print("\nAvailable Agents")
+        print("-" * 50)
 
-        deployments = list(client.deployments.list())
+        agents = client.agents.list()
 
-        print(f"✅ Project accessible")
-        print(f"Deployments Found: {len(deployments)}")
+        count = 0
 
-        for deployment in deployments:
-            print(f"- {deployment.name}")
+        for agent in agents:
+            count += 1
+
+            print(f"Agent ID: {agent.id}")
+            print(f"Name: {agent.name}")
+            print("-" * 50)
+
+        print(f"\nTotal Agents Found: {count}")
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
 
 
 if __name__ == "__main__":
