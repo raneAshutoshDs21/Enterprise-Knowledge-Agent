@@ -20,19 +20,19 @@ class AgentService:
 
     def ask_agent(self, question: str) -> str:
 
-     agent = self.get_agent()
+        agent = self.get_agent()
 
-     latest = agent["versions"]["latest"]
+        latest = agent["versions"]["latest"]
 
-     instructions = latest["definition"]["instructions"]
+        instructions = latest["definition"]["instructions"]
 
-     tools = latest["definition"]["tools"]
+        tools = latest["definition"]["tools"]
 
-     response = self.openai_client.responses.create(
-        model=MODEL_DEPLOYMENT_NAME,
-        instructions=instructions,
-        tools=tools,
-        input=question
-    )
+        response = self.openai_client.responses.create(
+            model=MODEL_DEPLOYMENT_NAME,
+            instructions=instructions,
+            tools=tools,
+            input=question
+        )
 
-     return response.output_text
+        return response.output_text
