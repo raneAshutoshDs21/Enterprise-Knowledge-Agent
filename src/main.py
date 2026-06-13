@@ -28,7 +28,8 @@ def main():
             print(f"\nAssistant:\n{answer}")
 
         except Exception as e:
-            print(f"\nError: {e}")
+            import traceback
+            traceback.print_exc()
 
 
 if __name__ == "__main__":

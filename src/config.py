@@ -34,6 +34,11 @@ AZURE_CLIENT_SECRET: Final[str] = cast(
     getenv("AZURE_CLIENT_SECRET")
 )
 
+APPLICATIONINSIGHTS_CONNECTION_STRING: Final[str] = cast(
+    str,
+    getenv("APPLICATIONINSIGHTS_CONNECTION_STRING")
+)
+
 if not PROJECT_ENDPOINT:
     raise ValueError("PROJECT_ENDPOINT not found in .env")
 
@@ -48,3 +53,6 @@ if not AZURE_TENANT_ID:
 
 if not AZURE_CLIENT_SECRET:
     raise ValueError("AZURE_CLIENT_SECRET not found in .env")
+
+if not APPLICATIONINSIGHTS_CONNECTION_STRING:
+    raise ValueError("APPLICATIONINSIGHTS_CONNECTION_STRING not found in .env")
