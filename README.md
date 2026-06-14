@@ -505,7 +505,7 @@ Add screenshots here:
 
 Azure AI Engineer | Generative AI Enthusiast | Azure AI Foundry | Agentic AI | RAG Systems | Cloud AI Solutions
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: https://www.linkedin.com/in/ashutosh-rane-61952018b/
 
 GitHub: https://github.com/yourusername
 
