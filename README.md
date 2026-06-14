@@ -507,7 +507,7 @@ Azure AI Engineer | Generative AI Enthusiast | Azure AI Foundry | Agentic AI | R
 
 LinkedIn: https://www.linkedin.com/in/ashutosh-rane-61952018b/
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/raneAshutoshDs21
 
 ---
 
